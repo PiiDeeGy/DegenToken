@@ -41,10 +41,10 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
     GiftShopInventory[] private AviaryGiftShop;
 
     constructor() ERC20("Degen", "DGN") Ownable() {
-        AviaryGiftShop.push(GiftShopInventory(10, "Purple Owl Plushie", false));
-        AviaryGiftShop.push(GiftShopInventory(15, "Cosmic Owl King Artboard", false));
-        AviaryGiftShop.push(GiftShopInventory(25, "Royal Owlbear Nightwatcher Art", false));
-        AviaryGiftShop.push(GiftShopInventory(35, "Duke Crossthorne the Fledgling Pixel GIF", false));
+        AviaryGiftShop.push(GiftShopInventory(100, "Purple Owl Plushie", false));
+        AviaryGiftShop.push(GiftShopInventory(250, "Cosmic Owl King Artboard", false));
+        AviaryGiftShop.push(GiftShopInventory(500, "Royal Owlbear Nightwatcher Commission", false));
+        AviaryGiftShop.push(GiftShopInventory(1000, "Duke Crossthorne the Fledgling Pixel GIF", false));
     }
 
     function redeemTokens(uint8 input) external payable returns (string memory) {
