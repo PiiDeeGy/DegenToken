@@ -66,7 +66,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         }
 
         approve(msg.sender, TokenCost);
-        transferFrom(msg.sender, owner(), TokenCost);
+        burn(TokenCost);
         AviaryGiftShop[input].RedeemStatus = true;
         return string.concat(AviaryGiftShop[input].GSItem, " has been redeemed!");
     }
